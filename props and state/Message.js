@@ -1,21 +1,21 @@
 import React from 'react'
 class Message extends React.Component{
     state = {
-        Qty : 0
+        message :"Hello"
     }
-    incrhandler =()=>{
-        this.setState({Qty: this.state.Qty + 1})
+    updatmrngemsg= () =>{
+        this.setState({message: "Good Morning"})
     }
-    decrhandler = () => {
-        this.setState({Qty:this.state.Qty - 1})
+    updatnightemsg = ()=>{
+        this.setState({message:"Good Night"})
     }
-    render () {
-        return <div>
-            <h1>Incr/Decr Handler</h1>
-            <h2>Quantity : {this.state.Qty}</h2>
-            <button className='btn btn-success' onClick={this.incrhandler}>Add On</button>
-            <button className='btn btn-danger' onClick={this.decrhandler}>Subs On</button>
-        </div>
-    }
+    render (){
+    return <div>
+        <h1>Message Comp</h1>
+        <h3>Message : {this.state.message}</h3>
+        <button onClick={this.updatmrngemsg}>gm</button>
+        <button onClick={this.updatnightemsg}>gn</button>
+    </div>
+}
 }
 export default Message
