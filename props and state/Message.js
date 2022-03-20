@@ -4,7 +4,7 @@ class Message extends React.Component{
         message :"Hello"
     }
     updatmrngemsg= () =>{
-        this.setState({message: "Good Morning"})
+        this.setState({ message: "Good Morning"})
     }
     updatnightemsg = ()=>{
         this.setState({message:"Good Night"})
