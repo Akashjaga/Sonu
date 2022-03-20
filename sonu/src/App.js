@@ -1,8 +1,18 @@
-import Form from "./Form"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Navbar from "./navbar";
+import Home from "./home";
+import Contact from "./contact";
 let App = () => {
-    return <div>
-        <h3 className="bg-success"> App Component</h3>
-        <Form />
-    </div>
-}
-export default App
+  return (
+    <>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path="/home" component={Home}/>
+          <Route path="/contact" component={Contact} />
+        </Switch>
+      </Router>
+    </>
+  );
+};
+export default App;
