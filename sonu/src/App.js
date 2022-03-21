@@ -1,17 +1,17 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navbar from "./navbar";
-import Home from "./home";
-import Contact from "./contact";
+import Form from './Form'
+import Navigate from './Navigate'
+import Data from './Data'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 let App = () => {
   return (
     <>
-      <Router>
-        <Navbar />
-        <Switch>
-          <Route path="/home" component={Home}/>
-          <Route path="/contact" component={Contact} />
-        </Switch>
-      </Router>
+    <Router>
+    <Navigate/>
+      <Switch>
+        <Route path='/Form' component={Form} />
+        <Route path='/Data' component={Data} />
+      </Switch>
+    </Router>
     </>
   );
 };
