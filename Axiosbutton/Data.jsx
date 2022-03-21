@@ -4,7 +4,7 @@ class Data extends React.Component{
     state = {
         user : []
     }
-    componentDidMount =()=>{
+    updateDataHandler =()=>{
         Axios.get("https://jsonplaceholder.typicode.com/users")
         .then((response)=>{
             this.setState({user:response.data})
@@ -13,7 +13,7 @@ class Data extends React.Component{
     }
     render () {
         return <>
-       
+        <button onClick={this.updateDataHandler}>User Data</button>
         <div className="container">
             <div className="row">
                 <div className="col-md-08">
