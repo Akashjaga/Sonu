@@ -3,16 +3,19 @@ import {Link} from "react-router-dom"
 class Navigate extends Component {
   render() {
     return (
-      <div className='navbar-collapse'>
-          <nav className='navbar navbar-expand-lg bg-info'>
-            <a className='navbar brand nav-link-active'> Navbar </a>
-            <div>
-                <ul className='navbar nav ml-auto'>
+      <div>
+          <nav className='navbar navbar-dark navbar-expand-lg bg-dark'>
+            <a className='navbar-item navbar-brand' href='tcs.com' > Navbar </a>
+            <div className='ml-auto'>
+                <ul className='navbar-nav'>
                     <li className='nav-item active'>
                         <Link className='navbar navbar-brand' to='./Form' > Form</Link>
                     </li>
                     <li className='nav-item active'>
                         <Link className='navbar navbar-brand' to='./Data' > Data</Link>
+                    </li>
+                    <li className='nav-item active'>
+                        <Link className='navbar navbar-brand' to='./ContactApp' > Contact App</Link>
                     </li>
 
                 </ul>
