@@ -1,20 +1,9 @@
-import Form from './Form'
-import Navigate from './Navigate'
-import Data from './Data'
-import ContactApp from './ContactApp'
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+
+import Message from '../../Hooks/Message'
 let App = () => {
-  return (
-    <>
-    <Router>
-    <Navigate/>
-      <Switch>
-        <Route path='/Form' component={Form} />
-        <Route path='/Data' component={Data} />
-        <Route path='/ContactApp' component={ContactApp} />
-      </Switch>
-    </Router>
-    </>
-  );
-};
-export default App;
+return <div>
+    <h1>App Component</h1>
+    <Message />
+  </div>
+}
+export default App
